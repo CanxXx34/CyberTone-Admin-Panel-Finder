@@ -8,11 +8,6 @@ import threading
 from threading import Thread
 from requests import get
 
-def connect(url):
-	print("{} deneniyor...".format(url))
-
-	return req.getcode()
-
 def main():
 	try:
 		print("""\033[1;36m
