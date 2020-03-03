@@ -1,28 +1,25 @@
-"""
-Bu yazılımı paylaşmadan önce bu yazılımın MIT Lisansı ile lisanslandığını lütfen unutmayınız.
-"""
-
 #!/usr/bin/env python
 import requests
 import threading
 from threading import Thread
 from requests import get
-
+#
 def main():
 	try:
 		print("""\033[1;36m
-           _  ________ _  _              _____  ______ 
-     /\   | |/ /____  | || |       /\   |  __ \|  ____|
-    /  \  | ' /    / /| || |_     /  \  | |__) | |__   
-   / /\ \ |  <    / / |__   _|   / /\ \ |  ___/|  __|  
-  / ____ \| . \  / /     | |    / ____ \| |    | |     
- /_/    \_\_|\_\/_/      |_|   /_/    \_\_|    |_|\033[1;31mv1.0
-                                                       
+		
+
+   ___     _            _____             
+  / __|  _| |__  ___ _ |_   _|__ _ _  ___ 
+ | (_| || | '_ \/ -_) '_|| |/ _ \ ' \/ -_)
+  \___\_, |_.__/\___|_|  |_|\___/_||_\___| APF \033[1;31mv1.0\033[1;36m
+      |__/                                
+
+
 \033[0m
 """)
 		print("\033[1;32m[ Author  : Vagus ]\033[0m")
-		print("\033[1;32m[ Website : https://ak74security.org/ ]\033[0m")
-		print("\033[1;32m[ Discord : https://discord.gg/4Ra3dgE ]\033[0m\n")
+		print("\033[1;32m[ Discord : https://discord.gg/qFyHUtC ]\033[0m\n")
 		while True:
 			print("\033[1m[!] Linkleri girerken lütfen \033[1;31mhttp(s)://\033[0m\033[1m'yi eklemeyin. Yoksa yazılımda hata çıkacaktır.\n[?] Aşağıya linki yazınız. (örn: www.siteisim.com, siteisim.com).")
 			a = input("\033[1;33mapf/> \033[1;0m")
@@ -55,7 +52,6 @@ def main():
 				except:
 					print("\033[1;31m[-]\033[0m Admin Paneli Bulunurken Bir Hatayla Karşılaşıldı: {}".format(i))
 					continue
-			print("\n\n\033[1mBu programı yapmamda yardımcı olan SonTürk'e teşekkürlerimi sunarım.")
 			devam = input("Devam etmek istiyor musunuz(e/h):\033[0m ")
 			if devam == "h":
 				break
